@@ -1,4 +1,4 @@
-#250625
+#250625_WED
 
 N = int(input())
 scores = list(map(int, input().split()))  # 리스트로 변환
