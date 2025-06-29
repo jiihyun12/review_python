@@ -47,3 +47,8 @@ for i in a:
 print(result.strip())  # 마지막 공백 제거
 
 
+
+
+
+
+
