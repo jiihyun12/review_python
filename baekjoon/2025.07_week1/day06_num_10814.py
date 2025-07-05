@@ -9,7 +9,9 @@ for i in range(N):
     nameandage.append((int(age), name))
 nameandage.sort(key=lambda x: x[0])
 
-for age, name in nameandage:
+print("아가에서 형님순, 만약 나이가 같다면 먼저 입력한 순 ")
+
+for age, name in nameandage:  
     print(age, name)
 
 #========================================
