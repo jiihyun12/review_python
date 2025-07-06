@@ -11,6 +11,23 @@ nums.sort()
 for num in nums:
     print(num)
 
+
+# 입력수가 최대 100만개이므로 input을 그냥 쓰면 느려서 시간 초과가 날 수 있다.
+import sys
+
+n = int(sys.stdin.readline())
+
+nums = []
+
+for _ in range(n):
+    nums.append(int(sys.stdin.readline()))
+
+nums.sort()
+
+for num in nums:
+    print(num)
+
+
 # ========================
 
 # 첫 줄에서 정수 하나 입력받고, 그것을 n에 저장한다.
