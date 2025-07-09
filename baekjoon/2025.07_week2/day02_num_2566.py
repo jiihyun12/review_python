@@ -86,3 +86,9 @@ print(max_num)
 # 문제는 1부터 시작하는 좌표를 요구하므로 그대로 출력
 print(max_row, max_col)
 
+
+# 9줄 입력을 하나씩 받음 (while row_num <= 9)
+# 한 줄을 공백으로 나눠 숫자로 바꿈 (input().split() + int())
+# 숫자 하나씩 보면서 if로 비교
+# 더 큰 숫자가 있으면 max_num, 위치(row, col) 저장
+# 마지막에 print로 결과 출력
