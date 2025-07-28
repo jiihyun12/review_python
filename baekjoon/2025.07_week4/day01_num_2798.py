@@ -35,7 +35,7 @@ for i in range(N):
                 # 현재 result와 비교해서 더 큰 값으로 갱신  
 
 print(result)  
-# 완전탐색 끝나고 최종 최댓값 출력  
+# 최종 최댓값 출력
 
 
 
