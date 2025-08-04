@@ -11,4 +11,3 @@ while True:
     count = sentence.count(target)
 
     print(n[0], count)
-
