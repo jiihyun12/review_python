@@ -17,21 +17,21 @@ print(*basket[1:])
 
 # =========================================
 
-# import sys
-# input = sys.stdin.readline
+import sys
+input = sys.stdin.readline
 
-# # N: 바구니 개수, M: 작업 횟수
-# N, M = map(int, input().split())
-# baskets = [0] * N  # 1~N 바구니를 0~N-1 인덱스로 보관
+# N: 바구니 개수, M: 작업 횟수
+N, M = map(int, input().split())
+baskets = [0] * N  # 1~N 바구니를 0~N-1 인덱스로 보관
 
-# for _ in range(M):
-#     i, j, k = map(int, input().split())
-#     # 문제는 1-index 구간 [i, j] 이므로 0-index로 변환 -> [i-1, j-1]
-#     for x in range(i - 1, j):
-#         baskets[x] = k
+for _ in range(M):
+    i, j, k = map(int, input().split())
+    # 문제는 1-index 구간 [i, j] 이므로 0-index로 변환 -> [i-1, j-1]
+    for x in range(i - 1, j):
+        baskets[x] = k
 
-# # 공백으로 출력
-# print(*baskets)
+# 공백으로 출력
+print(*baskets)
 
 # --------------------------------------
 
