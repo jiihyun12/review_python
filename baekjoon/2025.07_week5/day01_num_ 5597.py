@@ -19,7 +19,6 @@ students.sort() # 오름차순
 for students_numbers in students:
     print(students_numbers)    
     
-    
 
 # =========================================
 
