@@ -12,4 +12,4 @@ while True:
 
     print(n[0], count)
 
-    
+
