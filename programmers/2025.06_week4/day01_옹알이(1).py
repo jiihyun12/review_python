@@ -18,6 +18,7 @@ def solution(babbling):
 #     실행할 코드
 #     return 결과
 
+
 # =======================================
 # def solution(babbling):
 # ‘babbling’이라는 단어 리스트를 받아서 발음 가능한 단어가 몇 개인지 세는 함수
