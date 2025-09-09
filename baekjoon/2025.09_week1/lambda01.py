@@ -24,3 +24,4 @@ print(is_even(n2))
 print((lambda n: n % 2 == 0)(int(input())))
 
 
+
