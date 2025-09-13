@@ -47,4 +47,36 @@ for _ in range(n):
         else:               # 스택이 비어있으면
             print(-1)       # -1 출력
 
+
+# ===================
+# 빠른 출력
+import sys
+
+input = sys.stdin.readline
+
+n = int(input())
+stack = []
+out = []
+
+for _ in range(n):
+    cmd = input().split()
+
+    if cmd[0] == 'push':
+        stack.append(int(cmd[1]))
+    elif cmd[0] == 'pop':
+        out.append(str(stack.pop()) if stack else '-1')
+    elif cmd[0] == 'size':
+        out.append(str(len(stack)))
+    elif cmd[0] == 'empty':
+        out.append('0' if stack else '1')
+    elif cmd[0] == 'top':
+        out.append(str(stack[-1]) if stack else '-1')
+
+print('\n'.join(out))
+
+#
+# input().split()으로 명령/인자를 한 번에 파싱.
+# 출력은 out 리스트에 모았다가 마지막에 '\n'.join(...)으로 한 번에 출력 → 시간 절약.
+# stack[-1]은 비어있지 않을 때만 접근! (비었으면 -1 처리)
+
     
