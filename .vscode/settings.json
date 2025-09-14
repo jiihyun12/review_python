@@ -2,8 +2,14 @@
     "python-envs.pythonProjects": [
         {
             "path": "baekjoon/2025.09_week1/lambda01.py",
-            "envManager": "ms-python.python:venv",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        },
+        {
+            "path": "review/2025.09_week2/day02_lambda02.py",
+            "envManager": "ms-python.python:system",
             "packageManager": "ms-python.python:pip"
         }
-    ]
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
