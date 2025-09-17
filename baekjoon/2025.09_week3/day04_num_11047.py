@@ -1,3 +1,30 @@
+# 250917
+
+N, K = map(int, input().split())
+
+coins = []
+for _ in range(N):
+    coins.append(int(input().strip()))
+
+coins.sort(reverse=True) 
+
+count = 0  
+
+for coin in coins:
+    if K == 0:
+        break 
+
+    if coin <= K:
+       
+        use = K // coin
+        count += use
+        K %= coin
+
+print(count)
+
+
+
+# ========================================
 # N: 동전 종류 수, K: 목표 금액
 N, K = map(int, input().split())
 
