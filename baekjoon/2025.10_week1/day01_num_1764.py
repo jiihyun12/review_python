@@ -5,10 +5,10 @@
 import sys
 input = sys.stdin.readline
 
-N,M - map(int, input().split())
+N,M = map(int, input().split())
 
 heard = {input().strip() for _ in range(N)}
-heard = {input().strip() for _ in range(M)}
+seen = {input().strip() for _ in range(M)}
 
 both = sorted(heard & seen)
 
