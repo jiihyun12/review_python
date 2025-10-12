@@ -7,4 +7,8 @@ for i in range(1, N + 1):
 
 # =========================
 
-
+N = int(input())
+line = ""
+for _ in range(N):
+    line += "*"   
+    print(line)  
