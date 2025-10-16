@@ -45,4 +45,10 @@ result(1, 0)
 # print(nums) --> [1,2,3]
 # print(*nums) --> 1,2,3
 
+# ex)
+# def add(a, b, c):
+#     return a + b + c
+# nums = [1, 2, 3]
+# print(add(*nums))  # 언패킹해서 add(1, 2, 3) 과 동일
+
 
