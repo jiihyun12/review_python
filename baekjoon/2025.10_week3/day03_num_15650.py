@@ -50,5 +50,3 @@ result(1, 0)
 #     return a + b + c
 # nums = [1, 2, 3]
 # print(add(*nums))  # 언패킹해서 add(1, 2, 3) 과 동일
-
-
