@@ -17,10 +17,10 @@ else:
 # 만약 거짓이면 삼각형 불가능 --> 가장 긴 막대를 줄여야 함 
 # a + b + (a + b - 1) = 2*(a + b) - 1
 
-a, b, c = sorted(map(int, input().split()))  # 세 막대 길이 정렬 (a≤b≤c)
+# a, b, c = sorted(map(int, input().split()))  # 세 막대 길이 정렬 (a≤b≤c)
 
 # 삼각형 조건 확인
-if a + b > c:
-    print(a + b + c)             # 삼각형 가능 → 그냥 둘레 출력
-else:
-    print(2 * (a + b) - 1)       # 삼각형 불가능 → 가장 긴 변 줄임
+# if a + b > c:
+#    print(a + b + c)             # 삼각형 가능 → 그냥 둘레 출력
+# else:
+#    print(2 * (a + b) - 1)       # 삼각형 불가능 → 가장 긴 변 줄임
