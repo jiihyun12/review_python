@@ -9,7 +9,7 @@ result_str = str(result)
 
 for i in range(10):         
     print(result_str.count(str(i)))
-
+    
 # ================================
 
 # (A×B×C)의 결과에 0~9 각 숫자가 몇 번 등장했는지 한 줄씩 출력
