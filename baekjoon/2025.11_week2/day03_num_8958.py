@@ -17,3 +17,10 @@ for _ in range(T):
     print(score)
 
 
+# ==========================
+
+# 문자열을 왼쪽부터 순회
+# O면 count += 1
+# X면 count = 0 (초기화)
+# 매번 total += count
+
