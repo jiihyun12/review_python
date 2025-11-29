@@ -1,15 +1,15 @@
 # 251127
 
-import sys
-
-N = int(sys.stdin.readline().strip())
+N = int(input().strip())
 points = []
 
 for _ in range(N):
-    x, y = map(int, sys.stdin.readline().split())
+    x, y = map(int, input().split())
     points.append((x, y))
 
-points.sort(key=lambda p: (p[0], p[1]))
+def data(p):
+    return (p[0], p[1])
+points.sort(key=data)
 
 for x, y in points:
     print(x, y)
@@ -22,12 +22,3 @@ for x, y in points:
 # 파이썬에서 튜플은 앞에서부터 차례대로 비교하니까
 # (x, y)로 정렬하면 자동으로
 # x 먼저 비교 --> 같으면 y 비교
-
-
-##
-#sys.stdin.readline() 쓰는 이유:
-# N이 최대 100,000까지라서, input()보다 빠르게 하려고
-
-# points.sort(key=lambda p: (p[0], p[1]))
-# 그냥 points.sort()만 써도 같은 효과지만,
-# 기준을 명시해두면 보기 더 좋음.
