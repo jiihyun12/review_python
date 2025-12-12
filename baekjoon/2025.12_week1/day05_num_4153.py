@@ -40,3 +40,26 @@ while True:
 # 맞으면 "right", 아니면 "wrong" 출력.
 
 
+while True:
+    a, b, c = map(int, input().split())
+
+    # 0 0 0 입력되면 반복 종료
+    if a == 0 and b == 0 and c == 0:
+        break
+
+    # 3개의 길이를 리스트로 묶고
+    sides = [a, b, c]
+
+    # 가장 긴 변을 찾기 위해 정렬 (오름차순)
+    sides.sort()        # 예: [3, 4, 5]
+
+    # 변수 의미:
+    # x, y: 짧은 두 변
+    # h: 가장 긴 변
+    x, y, h = sides[0], sides[1], sides[2]
+
+    # 피타고라스 정리 검사
+    if x*x + y*y == h*h:
+        print("right")
+    else:
+        print("wrong")
