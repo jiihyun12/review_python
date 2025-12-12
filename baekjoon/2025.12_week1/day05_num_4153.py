@@ -42,6 +42,7 @@ while True:
 # 맞으면 "right", 아니면 "wrong" 출력.
 
 
+# 코드 설명
 while True:
     a, b, c = map(int, input().split())
 
